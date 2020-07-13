@@ -22,12 +22,12 @@
     ]
   },
   "dependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.1.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
@@ -46,6 +46,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
     "jest": "^26.1.0",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "prettier": "^2.0.5"
   }
 }
