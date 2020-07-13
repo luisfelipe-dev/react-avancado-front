@@ -46,7 +46,8 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
     "jest": "^26.1.0",
-    "typescript": "^3.9.6",
-    "prettier": "^2.0.5"
+    "jest-styled-components": "^7.0.2",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
   }
 }
