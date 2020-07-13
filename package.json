@@ -10,11 +10,24 @@
     "test": "jest",
     "test:watch": "yarn test --watch"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
+  },
   "dependencies": {
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
@@ -32,9 +45,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
-    "husky": "^4.2.5",
     "jest": "^26.1.0",
-    "lint-staged": "^10.2.11",
     "typescript": "^3.9.6"
   }
 }
